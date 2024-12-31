@@ -4,7 +4,7 @@
      <input v-model="linkValue" class="form-control" placeholder="Enter a link"/>
    </div>
 
-   <button class="btn btn-primary" @click="saveLink">Save</button>
+   <button class="btn btn-primary" @click="saveLink">Generate</button>
 
  </div>
 </template>
@@ -12,9 +12,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import {initLinkStore} from "../store/linkStore.ts";
+import {getLinkStore} from "../store/linkStore.ts";
 
-const linkStore = initLinkStore()
+const linkStore = getLinkStore()
 
 const linkValue = ref<string>('')
 
