@@ -5,7 +5,7 @@ Tiny QR code generator on Vue3
 # Run 
 
 ```
-npm install 
+yarn install 
 
-npm run dev
+yarn dev
 ```
